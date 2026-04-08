@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IND8108 – Projet Équipe</title>
+    <meta name="description" content="Projet créatif de l'équipe IND8108 – Une expérience interactive en pixel art.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ===================== HOME SCREEN ===================== -->
+    <section id="home" class="section home-section">
+        <div class="pixel-stars"></div>
+        <div class="home-content">
+            <div class="pixel-border-box">
+                <h1 class="home-title glitch" data-text="IND8108 – Projet Équipe">IND8108 – Projet Équipe</h1>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar pixel-avatar" style="--hue:200;">&#9786;</div>
+                    <p class="member-name">Yassine Seddaoui</p>
+                    <p class="member-id">2204548</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar pixel-avatar" style="--hue:130;">&#9786;</div>
+                    <p class="member-name">Yacine Barka</p>
+                    <p class="member-id">2213728</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar pixel-avatar" style="--hue:30;">&#9786;</div>
+                    <p class="member-name">John Abou Nakoul</p>
+                    <p class="member-id">2208969</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar pixel-avatar" style="--hue:300;">&#9786;</div>
+                    <p class="member-name">Ayoub Issiakhem</p>
+                    <p class="member-id">2216575</p>
+                </div>
+            </div>
+
+            <button id="start-btn" class="pixel-btn">
+                <span class="btn-icon">&#9654;</span> Commencez
+            </button>
+        </div>
+
+        <!-- Decorative floating pixels -->
+        <div class="floating-pixels">
+            <span class="fpx" style="--x:10%;--y:20%;--d:3s;--c:#ff6b9d;"></span>
+            <span class="fpx" style="--x:85%;--y:15%;--d:4s;--c:#c44dff;"></span>
+            <span class="fpx" style="--x:25%;--y:75%;--d:5s;--c:#4dffdb;"></span>
+            <span class="fpx" style="--x:70%;--y:80%;--d:3.5s;--c:#ffd54f;"></span>
+            <span class="fpx" style="--x:50%;--y:40%;--d:6s;--c:#69b4ff;"></span>
+            <span class="fpx" style="--x:15%;--y:55%;--d:4.5s;--c:#ff8a65;"></span>
+            <span class="fpx" style="--x:90%;--y:50%;--d:3.2s;--c:#81c784;"></span>
+            <span class="fpx" style="--x:40%;--y:10%;--d:5.5s;--c:#ba68c8;"></span>
+            <span class="fpx" style="--x:60%;--y:65%;--d:4.2s;--c:#4fc3f7;"></span>
+            <span class="fpx" style="--x:35%;--y:90%;--d:3.8s;--c:#f06292;"></span>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 1 ===================== -->
+    <section id="section-1" class="section content-section" data-audio="">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Section Un</h2>
+                <div class="pixel-divider"></div>
+            </div>
+            <div class="content-row">
+                <div class="text-block left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="img-placeholder" data-label="Image 1.1">
+                        <div class="placeholder-icon">&#9733;</div>
+                    </div>
+                    <div class="img-placeholder" data-label="Image 1.2">
+                        <div class="placeholder-icon">&#9733;</div>
+                    </div>
+                </div>
+                <div class="text-block right">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="image-gallery full-width">
+                    <div class="img-placeholder wide" data-label="Image 1.3">
+                        <div class="placeholder-icon">&#9733;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 2 ===================== -->
+    <section id="section-2" class="section content-section" data-audio="audio\PourquoiIAConsommeAutant.mp3">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Pourquoi l'IA Consomme Autant?</h2>
+                <div class="pixel-divider"></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 40px; width: 100%; margin-top: 20px;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%;">
+                    <div class="bio-img-wrapper"
+                        style="border: var(--pixel-border) solid var(--accent-2); border-bottom: var(--pixel-border) solid var(--accent-2); height: 220px; width: 100%;">
+                        <img src="images/datacenter1.webp" alt="Datacenter 1" class="bio-img">
+                    </div>
+                    <div class="bio-img-wrapper"
+                        style="border: var(--pixel-border) solid var(--accent-2); border-bottom: var(--pixel-border) solid var(--accent-2); height: 220px; width: 100%;">
+                        <img src="images/datacenter2.webp" alt="Datacenter 2" class="bio-img">
+                    </div>
+                    <div class="bio-img-wrapper"
+                        style="border: var(--pixel-border) solid var(--accent-2); border-bottom: var(--pixel-border) solid var(--accent-2); height: 220px; width: 100%;">
+                        <img src="images/datacenter3.jpg" alt="Datacenter 3" class="bio-img">
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                    <div class="text-block left" style="border-left-color: var(--accent-2); max-width: 100%;">
+                        <h3
+                            style="color: var(--accent-2); font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">
+                            Calculs intensifs</h3>
+                        <p>L'entraînement des grands modèles nécessite une puissance de calcul phénoménale. Ces
+                            opérations mathématiques en chaîne mobilisent l'énergie de dizaines de milliers de
+                            processeurs graphiques.</p>
+                    </div>
+                    <div class="text-block right" style="border-right-color: var(--accent-2); max-width: 100%;">
+                        <h3
+                            style="color: var(--accent-2); font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">
+                            Refroidissements massifs</h3>
+                        <p>Une telle puissance génère de la chaleur extrême. Maintenir ces équipements exige le
+                            déploiement de systèmes de climatisation gigantesques extrêmement énergivores dans ces
+                            bâtiments.</p>
+                    </div>
+                    <div class="text-block left" style="border-left-color: var(--accent-2); max-width: 100%;">
+                        <h3
+                            style="color: var(--accent-2); font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">
+                            Fonctionnement 24/7</h3>
+                        <p>Les requêtes mondiales sont constantes. Ces mégacentres n'ont pas de repos : ils tournent à
+                            plein régime continuellement, consommant sans un arrêt en électricité l'équivalent d'une
+                            petite ville.</p>
+                    </div>
+                    <div class="text-block right" style="border-right-color: var(--accent-2); max-width: 100%;">
+                        <h3
+                            style="color: var(--accent-2); font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">
+                            Centralisation</h3>
+                        <p>Plutôt que d'être partagé, le traitement des données et l'hébergement de cette puissance
+                            restent ultra-centralisés, imposant un énorme stress énergétique localisé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 3 ===================== -->
+    <section id="section-3" class="section content-section" data-audio="">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Section Trois</h2>
+                <div class="pixel-divider"></div>
+            </div>
+            <div class="content-row">
+                <div class="text-block left">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="img-placeholder tall" data-label="Image 3.1">
+                        <div class="placeholder-icon">&#9824;</div>
+                    </div>
+                </div>
+                <div class="text-block right">
+                    <p>Quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="image-gallery full-width">
+                    <div class="img-placeholder" data-label="Image 3.2">
+                        <div class="placeholder-icon">&#9824;</div>
+                    </div>
+                    <div class="img-placeholder" data-label="Image 3.3">
+                        <div class="placeholder-icon">&#9824;</div>
+                    </div>
+                    <div class="img-placeholder" data-label="Image 3.4">
+                        <div class="placeholder-icon">&#9824;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 4 ===================== -->
+    <section id="section-4" class="section content-section" data-audio="">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Section Quatre</h2>
+                <div class="pixel-divider"></div>
+            </div>
+            <div class="content-row">
+                <div class="image-gallery">
+                    <div class="img-placeholder wide" data-label="Image 4.1">
+                        <div class="placeholder-icon">&#9829;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="text-block left">
+                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                        voluptates.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="img-placeholder" data-label="Image 4.2">
+                        <div class="placeholder-icon">&#9829;</div>
+                    </div>
+                </div>
+                <div class="text-block right">
+                    <p>Repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 5 – BIOMIMÉTISME ===================== -->
+    <section id="section-5" class="section content-section" data-audio="audio/biomimetisme.mp3">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Biomimétisme</h2>
+                <div class="pixel-divider"></div>
+            </div>
+
+            <!-- 3-column biomimicry cards -->
+            <div class="bio-grid">
+                <!-- Card 1: Tree Roots -->
+                <div class="bio-card">
+                    <div class="bio-img-wrapper">
+                        <img src="images/tree_roots.jpg" alt="Racine d'arbres" class="bio-img">
+                    </div>
+                    <h3 class="bio-card-title">Racine d'arbres</h3>
+                    <p class="bio-nature">Distribuent l'eau seulement là où c'est nécessaire</p>
+                    <div class="bio-arrow">&#11167;</div>
+                    <p class="bio-tech">Distribuer puissance seulement où c'est nécessaire</p>
+                </div>
+
+                <!-- Card 2: Ant Colony -->
+                <div class="bio-card">
+                    <div class="bio-img-wrapper">
+                        <img src="images/ants_colony.gif" alt="Colonie de fourmis" class="bio-img">
+                    </div>
+                    <h3 class="bio-card-title">Colonie de fourmis</h3>
+                    <p class="bio-nature">Optimisent leurs chemins collectivement sans autorité centrale</p>
+                    <div class="bio-arrow">&#11167;</div>
+                    <p class="bio-tech">Au lieu d'un gros centre, avoir des millions de petits ordinateurs répartis</p>
+                </div>
+
+                <!-- Card 3: Bird Migration -->
+                <div class="bio-card">
+                    <div class="bio-img-wrapper">
+                        <img src="images/Birds_migration.gif" alt="Migration d'oiseaux" class="bio-img">
+                    </div>
+                    <h3 class="bio-card-title">Migration d'oiseaux</h3>
+                    <p class="bio-nature">Les oiseaux migrent vers des zones qui sont climatiquement favorables</p>
+                    <div class="bio-arrow">&#11167;</div>
+                    <p class="bio-tech">Migrer les centres dans des climats plus optimaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 6 ===================== -->
+    <section id="section-6" class="section content-section" data-audio="">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Section Six</h2>
+                <div class="pixel-divider"></div>
+            </div>
+            <div class="content-row">
+                <div class="image-gallery">
+                    <div class="img-placeholder" data-label="Image 6.1">
+                        <div class="placeholder-icon">&#10047;</div>
+                    </div>
+                </div>
+                <div class="text-block right">
+                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+                        est eligendi optio.</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="text-block left">
+                    <p>Cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                        est.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="img-placeholder" data-label="Image 6.2">
+                        <div class="placeholder-icon">&#10047;</div>
+                    </div>
+                    <div class="img-placeholder" data-label="Image 6.3">
+                        <div class="placeholder-icon">&#10047;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 7 ===================== -->
+    <section id="section-7" class="section content-section" data-audio="">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Section Sept</h2>
+                <div class="pixel-divider"></div>
+            </div>
+            <div class="content-row">
+                <div class="text-block left">
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                        consequatur.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="img-placeholder tall" data-label="Image 7.1">
+                        <div class="placeholder-icon">&#9688;</div>
+                    </div>
+                </div>
+                <div class="text-block right">
+                    <p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus.</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="image-gallery full-width">
+                    <div class="img-placeholder" data-label="Image 7.2">
+                        <div class="placeholder-icon">&#9688;</div>
+                    </div>
+                    <div class="img-placeholder" data-label="Image 7.3">
+                        <div class="placeholder-icon">&#9688;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== AUDIO PLAYBAR ===================== -->
+    <div id="audioBar">
+        <div class="bar-section-info">
+            <button class="bar-btn" id="prevBtn" title="Section précédente">◀◀</button>
+            <div class="section-badge">
+                <span class="bar-label">SECTION</span>
+                <span id="barSectionNum">—</span>
+                <span class="bar-label">/ 7</span>
+            </div>
+            <button class="bar-btn" id="nextBtn" title="Section suivante">▶▶</button>
+        </div>
+        <div class="bar-center">
+            <button class="bar-btn play-pause-btn" id="playPauseBtn">▶</button>
+            <div class="bar-time-wrap">
+                <span class="bar-time" id="barCurrentTime">0:00</span>
+                <div class="bar-progress-wrap">
+                    <input type="range" id="barProgress" min="0" max="100" value="0" step="0.1" />
+                    <div id="barProgressFill" class="bar-progress-fill"></div>
+                </div>
+                <span class="bar-time" id="barDuration">0:00</span>
+            </div>
+        </div>
+        <div class="bar-volume-wrap">
+            <span class="vol-icon">♪</span>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="1" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
