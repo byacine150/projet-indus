@@ -103,7 +103,9 @@
     // ─── Audio event handlers ────────────────────────
     function onAudioEnded() {
         // Mark current dot as completed
-        dots[currentSection].classList.add('completed');
+        if (dots[currentSection]) {
+            dots[currentSection].classList.add('completed');
+        }
 
         if (currentSection < SECTION_COUNT - 1) {
             // Move to next section
