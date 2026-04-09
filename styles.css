@@ -349,7 +349,7 @@ body {
 /* Content rows */
 .content-row {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
