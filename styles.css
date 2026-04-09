@@ -467,6 +467,134 @@ body {
 #section-7 .img-placeholder { border-color: var(--accent-7); }
 #section-7 .placeholder-icon{ color: var(--accent-7); }
 
+/* ============================================
+   SECTION 7 – RETOUR METACOGNITIF
+   ============================================ */
+.section7-intro {
+    max-width: 100%;
+    border-left-color: var(--accent-7);
+    background: rgba(22, 33, 62, 0.58);
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.meta-card {
+    background: linear-gradient(160deg, rgba(22, 33, 62, 0.78), rgba(15, 14, 23, 0.82));
+    border: 3px solid rgba(129, 199, 132, 0.75);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.meta-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-3);
+    box-shadow: 0 14px 28px rgba(77, 255, 219, 0.14);
+}
+
+.meta-media {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-bottom: 3px solid rgba(129, 199, 132, 0.75);
+}
+
+.meta-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.meta-card:hover .meta-media img {
+    transform: scale(1.05);
+}
+
+.meta-step {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(15, 14, 23, 0.88);
+    color: var(--accent-7);
+    border: 2px solid var(--accent-7);
+    padding: 6px 8px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.meta-card h3 {
+    color: var(--accent-7);
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 18px 18px 8px;
+}
+
+.meta-card p {
+    color: var(--text-dim);
+    font-size: 8px;
+    line-height: 2;
+    padding: 0 18px 18px;
+}
+
+.meta-item-list {
+    list-style: none;
+    color: var(--text-dim);
+    font-size: 8px;
+    line-height: 2;
+    padding: 0 18px 18px;
+}
+
+.meta-item-list li {
+    margin-left: 16px;
+    position: relative;
+}
+
+.meta-item-list li::before {
+    content: '▸';
+    position: absolute;
+    left: -12px;
+    color: var(--accent-7);
+}
+
+.meta-learnings {
+    width: 100%;
+    border: 3px solid rgba(129, 199, 132, 0.75);
+    background: rgba(15, 14, 23, 0.72);
+    padding: 20px;
+}
+
+.meta-learnings h3 {
+    color: var(--accent-7);
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.meta-pill-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.meta-pill-list li {
+    border: 2px solid rgba(129, 199, 132, 0.75);
+    background: rgba(26, 26, 46, 0.95);
+    color: var(--text);
+    font-size: 8px;
+    line-height: 1.8;
+    padding: 8px 10px;
+}
+
 /* Section enter animation */
 .content-section .section-inner {
     opacity: 0;
@@ -830,6 +958,18 @@ body {
     }
     .bio-grid {
         grid-template-columns: 1fr;
+    }
+    .meta-grid {
+        grid-template-columns: 1fr;
+    }
+    .meta-media {
+        height: 170px;
+    }
+    .meta-pill-list {
+        flex-direction: column;
+    }
+    .meta-pill-list li {
+        width: 100%;
     }
     .section {
         padding: 40px 16px 100px;
