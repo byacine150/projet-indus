@@ -819,6 +819,82 @@ body {
     padding: 8px 10px;
 }
 
+/* ============================================
+   AUDIO-SYNCED CARD HIGHLIGHTING
+   ============================================ */
+
+/* Section 1 – info-card highlight (pink/red) */
+#section-1 .info-card.audio-highlight {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+    border-color: var(--accent-3);
+    background: rgba(255, 107, 157, 0.12);
+}
+
+/* Section 2 – text-block highlight (purple) */
+#section-2 .text-block.audio-highlight {
+    background: rgba(196, 77, 255, 0.15);
+    box-shadow: 0 0 20px rgba(196, 77, 255, 0.2);
+    border-color: var(--accent-2);
+}
+
+/* Section 3 – bio-card highlight (teal/green) */
+#section-3 .bio-card.audio-highlight {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(77, 255, 219, 0.25);
+    border-color: var(--accent-3);
+    background: rgba(77, 255, 219, 0.08);
+}
+
+/* Section 4 – bio-card highlight (yellow) */
+#section-4 .bio-card.audio-highlight {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(255, 213, 79, 0.25);
+    border-color: var(--accent-4);
+    background: rgba(255, 213, 79, 0.08);
+}
+
+/* Section 5 – bio-card highlight (blue) */
+#section-5 .bio-card.audio-highlight {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(105, 180, 255, 0.25);
+    border-color: var(--accent-3);
+    background: rgba(105, 180, 255, 0.08);
+}
+
+/* Section 6 – mindmap image highlight (orange) */
+#section-6 .image-gallery.audio-highlight {
+    box-shadow: 0 0 30px rgba(255, 138, 101, 0.3);
+    border: 3px solid rgba(255, 138, 101, 0.5);
+    border-radius: 4px;
+    background: rgba(255, 138, 101, 0.06);
+}
+
+/* Section 7 – meta-card highlight (green) */
+#section-7 .meta-card.audio-highlight {
+    transform: translateY(-6px);
+    border-color: var(--accent-3);
+    box-shadow: 0 14px 28px rgba(77, 255, 219, 0.14);
+    background: linear-gradient(160deg, rgba(129, 199, 132, 0.12), rgba(15, 14, 23, 0.82));
+}
+
+/* Section 7 – meta-learnings highlight (green) */
+#section-7 .meta-learnings.audio-highlight {
+    box-shadow: 0 0 20px rgba(129, 199, 132, 0.25);
+    border-color: var(--accent-3);
+    background: rgba(129, 199, 132, 0.1);
+}
+
+/* Smooth transitions for all highlightable elements */
+.info-card,
+.text-block,
+.bio-card,
+.meta-card,
+.meta-learnings,
+.image-gallery {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+}
+
 /* Section enter animation */
 .content-section .section-inner {
     opacity: 0;
